@@ -6,7 +6,7 @@ import pandas as pd
 import re
 
 
-file = open("lista.html", "r")
+file = open("lista.html", "r", encoding="utf8")
 data = file.read()
 file.close()
 
