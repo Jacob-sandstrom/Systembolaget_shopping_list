@@ -31,7 +31,6 @@ for beer in beers:
         name2 = ""
 
     info = beer.find("div", "css-1dtnjt5").text
-    print(info)
 
     country = re.search("([^0-9]*)", info).group(1)
 
@@ -58,10 +57,13 @@ for beer in beers:
 
     try:
         store_info = beer.find("div", "css-1x8g9wn").text
+        #store_info = beer.find("div", "css-1x8g9wn")
+        print(store_info)
         num_in_store = re.search("Antal i butik(.*) st", store_info).group(1)
         section = re.search("stSektion(.*)Hylla(.*)", store_info).group(1)
         shelf = re.search("stSektion(.*)Hylla(.*)", store_info).group(2)
     except:
+        print("fail\n\n\n")
         num_in_store = ""
         section = ""
         shelf = ""
@@ -96,6 +98,7 @@ ale = []
 suröl = []
 porter = []
 cider = []
+vin = []
 alkoholfritt = []
 
 övrigt = []
@@ -115,13 +118,15 @@ for i, b in enumerate(data):
         vete.append(b)
     elif "cider" in b[6].lower() or "blanddryck" in b[6].lower():
         cider.append(b)
+    elif "vin" in b[6].lower():
+        vin.append(b)
     else:
         övrigt.append(b)
 
 print(övrigt)
 
 
-ordered = lager + [[],[]] + vete + [[],[]] + ale + [[],[]] + porter + [[],[]] + suröl + [[],[]] + cider + [[],[]] + alkoholfritt + [[],[]] + övrigt
+ordered = [[],["lager"]] + lager + [[],["vete"]] + vete + [[],["ale"]] + ale + [[],["porter"]] + porter + [[],["suröl"]] + suröl + [[],["cider"]] + cider + [[],["vin"]] + vin + [[],["alkoholfritt"]] + alkoholfritt + [[],[]] + övrigt
 
 # print(len(ordered))
 

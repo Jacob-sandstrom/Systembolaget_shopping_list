@@ -1,20 +1,69 @@
 namn1,namn2,pris,köp antal,tot pris,länk,stil,land,storlek,alkohol,antal i butik,sektion,hylla
-Eriksberg,Karaktär,14.9,,,https://www.systembolaget.se/produkt/ol/eriksberg-8993715/,"Öl, Mellanmörk lager, Märzen och wienerstil",Sverige,330,5.4,462,31,14
 ,,,,,,,,,,,,
+lager,,,,,,,,,,,,
+Falcon Export,,12.5,,,https://www.systembolaget.se/produkt/ol/falcon-export-143315/,Öl Ljus lager Internationell stil,Sverige,330,5.2,938,30,02
+Arton56,Glutenfri,15.5,,,https://www.systembolaget.se/produkt/ol/arton56-1158715/,Öl Ljus lager Internationell stil,Sverige,330,5.2,161,31,09
+Arboga 102,,24.4,,,https://www.systembolaget.se/produkt/ol/arboga-102-1139212/,Öl Ljus lager Starkare lager,Sverige,500,10.2,201,29,01
+Ekologisk Pilsner,Great Swedish Beer Festival 2024,29.9,,,https://www.systembolaget.se/produkt/ol/ekologisk-pilsner-1049115/,"Öl, Ljus lager, Pilsner - tysk stil",Sverige,330,5.0,64,TS,00
+Stigbergets,Ted Nz Pilsner,30.9,,,https://www.systembolaget.se/produkt/ol/stigbergets-3159314/,"Öl, Ljus lager, Pilsner - tysk stil",Sverige,440,5.0,70,30,05
 ,,,,,,,,,,,,
+vete,,,,,,,,,,,,
+1664 Blanc,,19.3,,,https://www.systembolaget.se/produkt/ol/1664-blanc-151403/,Öl Veteöl Witbier,Internationellt märke,330,5.0,185,32,08
+Bearded Rabbit Brewery,HällVete,28.0,,,https://www.systembolaget.se/produkt/ol/bearded-rabbit-brewery-3132015/,"Öl, Veteöl, Hefeweizen",Sverige,330,5.0,31,–,–
+Erdinger,Weissbier Hefe,25.9,,,https://www.systembolaget.se/produkt/ol/erdinger-1120801/,"Öl, Veteöl, Hefeweizen",Tyskland,500,5.3,51,32,03
 ,,,,,,,,,,,,
+ale,,,,,,,,,,,,
+Stigbergets,Scandinavian West Coast IPA,37.9,,,https://www.systembolaget.se/produkt/ol/stigbergets-120515/,Öl Ale New England IPA/Hazy IPA,Sverige,330,6.5,435,32,09
+Duvel,,30.9,,,https://www.systembolaget.se/produkt/ol/duvel-165403/,Öl Ale Ljus stark belgisk ale/Trippel,Belgien,330,8.5,20,25,01
+Lagunitas,IPA,25.9,,,https://www.systembolaget.se/produkt/ol/lagunitas-8960703/,Öl Ale India pale ale (IPA),Internationellt märke,355,6.2,31,27,02
+Brutal Brewing,A Ship Full of IPA,18.9,,,https://www.systembolaget.se/produkt/ol/brutal-brewing-8313015/,Öl Ale India pale ale (IPA),Sverige,330,5.8,407,32,09
+Stigbergets Amazing Haze,IPA,37.9,,,https://www.systembolaget.se/produkt/ol/stigbergets-amazing-haze-3148715/,Öl Ale New England IPA/Hazy IPA,Sverige,330,6.5,23,28,02
+Bron IPA,,20.9,,,https://www.systembolaget.se/produkt/ol/bron-ipa-108412/,Öl Ale India pale ale (IPA),Sverige,500,5.9,20,27,02
+Lucky Bait,,10.5,,,https://www.systembolaget.se/produkt/ol/lucky-bait-132715/,"Öl, Ljus lager, Modern stil/India Pale Lager",Sverige,330,5.4,657,31,07
+Beerbliotek,Hazy mornings in Ipanema,35.3,,,https://www.systembolaget.se/produkt/ol/beerbliotek-3081003/,"Öl, Ale, New England IPA/Hazy IPA",Sverige,330,6.0,38,27,04
+Ocean,Amber Ale,25.0,,,https://www.systembolaget.se/produkt/ol/ocean-3196103/,"Öl, Ale, Amber ale",Sverige,330,5.0,36,25,02
+Bronx Brewery,No Resolution IPA,30.9,,,https://www.systembolaget.se/produkt/ol/bronx-brewery-1151215/,"Öl, Ale, India pale ale (IPA)",USA,355,7.6,41,27,02
+Bootstrap Brewing,Medal AF Mosaic IPA,28.9,,,https://www.systembolaget.se/produkt/ol/bootstrap-brewing-1318215/,"Öl, Ale, India pale ale (IPA)",USA,355,6.5,36,TS,00
+Amundsen,Smash mouth IPA,39.9,,,https://www.systembolaget.se/produkt/ol/amundsen-1318914/,"Öl, Ale, New England IPA/Hazy IPA",Norge,440,6.5,26,TS,00
+Brouwerij De Ryck x Munklägret,Blond,24.9,,,https://www.systembolaget.se/produkt/ol/brouwerij-de-ryck-x-munklagret-147303/,"Öl, Ale, Belgisk ljus ale/Blonde",Belgien,330,5.5,7,25,01
+Brehon,Killanny Red Ale,27.3,,,https://www.systembolaget.se/produkt/ol/brehon-117514/,"Öl, Ale, Irländsk ale",Irland,440,4.5,30,25,02
+Collective Arts,Deceptive creature nectaron NEIPA,43.9,,,https://www.systembolaget.se/produkt/ol/collective-arts-1001614/,"Öl, Ale, New England IPA/Hazy IPA",Kanada,473,6.8,97,–,–
 ,,,,,,,,,,,,
-Brutal Brewing,A Ship Full of IPA,18.9,,,https://www.systembolaget.se/produkt/ol/brutal-brewing-8313015/,"Öl, Ale, India pale ale (IPA)",,330,5.8,407,32,09
+porter,,,,,,,,,,,,
+Guinness,Draught,28.9,,,https://www.systembolaget.se/produkt/ol/guinness-126015/,Öl Torr porter och stout,Irland,440,4.2,92,32,01
+Omnipollo Noa,Pecan Mud Cake,55.9,,,https://www.systembolaget.se/produkt/ol/omnipollo-noa-142703/,Öl Imperial porter och stout,Sverige,330,11.0,32,32,03
+Carnegie,Porter,20.6,,,https://www.systembolaget.se/produkt/ol/carnegie-149703/,"Öl, Torr porter och stout",Sverige,330,5.5,85,32,01
+Hyllie Bryggeri,Seaside Porter,26.9,,,https://www.systembolaget.se/produkt/ol/hyllie-bryggeri-1316015/,"Öl, Torr porter och stout",Sverige,330,5.5,62,32,01
+Ängöl,Ostrea Ostronporter,27.9,,,https://www.systembolaget.se/produkt/ol/angol-1317303/,"Öl, Porter och stout",Sverige,330,5.1,164,TS,00
+Hoppin Frog,BA B.O.R.I.S. Oatmeal Imperial Stout,94.9,,,https://www.systembolaget.se/produkt/ol/hoppin-frog-1036814/,"Öl, Imperial porter och stout",USA,473,9.4,8,TS,00
 ,,,,,,,,,,,,
+suröl,,,,,,,,,,,,
+Lindemans Apple,,24.9,,,https://www.systembolaget.se/produkt/ol/lindemans-apple-8300103/,Öl Syrlig öl Frukt- och bärlambic,Belgien,250,4.0,18,32,05
+Timmermans,Kriek Lambicus,24.4,,,https://www.systembolaget.se/produkt/ol/timmermans-168503/,Öl Syrlig öl Frukt- och bärlambic,Belgien,250,4.0,29,32,05
+Fermenterarna,Burger Burger,61.6,,,https://www.systembolaget.se/produkt/ol/fermenterarna-3777814/,Öl Övrig syrlig öl,Sverige,440,8.0,0,32,06
+Duckpond,Cocobolo,45.9,,,https://www.systembolaget.se/produkt/ol/duckpond-3252415/,"Öl, Syrlig öl, Gose och lichtenhainer",Sverige,330,6.0,12,32,05
+Duckpond,Darkwing,46.9,,,https://www.systembolaget.se/produkt/ol/duckpond-3463215/,"Öl, Syrlig öl, Gose och lichtenhainer",Sverige,330,6.0,24,–,–
+Bellwoods Brewery,Jelly King Prickly Pear & Pink Guava,50.9,,,https://www.systembolaget.se/produkt/ol/bellwoods-brewery-1086314/,"Öl, Övrig syrlig öl",Kanada,473,5.6,39,TS,00
+Duchesse de Bourgogne,,28.9,,,https://www.systembolaget.se/produkt/ol/duchesse-de-bourgogne-8949603/,"Öl, Syrlig öl, Flamländsk röd och brun öl",Belgien,250,6.2,137,–,–
+Vault City,Vault Dweller Toxic Waste Sour,55.9,,,https://www.systembolaget.se/produkt/ol/vault-city-8829314/,"Öl, Övrig syrlig öl",Storbritannien,440,4.3,31,TS,00
+White Dog Brewery,Will it float #7,70.9,,,https://www.systembolaget.se/produkt/ol/white-dog-brewery-1020714/,"Öl, Övrig syrlig öl",Nederländerna,440,6.0,50,TS,00
+Beersmiths,Paired for Life,38.5,,,https://www.systembolaget.se/produkt/ol/beersmiths-3059712/,"Öl, Övrig syrlig öl",Sverige,500,4.6,45,32,06
+Sad Robot,Sur,27.5,,,https://www.systembolaget.se/produkt/ol/sad-robot-3134803/,"Öl, Övrig syrlig öl",Sverige,330,6.9,71,32,07
 ,,,,,,,,,,,,
+cider,,,,,,,,,,,,
+Liquid Industries,The Bellini Project,17.9,,,https://www.systembolaget.se/produkt/cider-blanddrycker/liquid-industries-108915/,Blanddryck Söt,Sverige,330,4.5,18,24,04
+Ginger Joe,Ginger Beer,23.5,,,https://www.systembolaget.se/produkt/cider-blanddrycker/ginger-joe-8801802/,Blanddryck Söt,Internationellt märke,330,4.0,105,24,03
+Pistonhead,Cider Hallon och Svarta vinbär,15.9,,,https://www.systembolaget.se/produkt/cider-blanddrycker/pistonhead-1306715/,Cider Söt,Sverige,330,4.5,10,24,04
+Adam & Evas Äppelcider,,22.9,,,https://www.systembolaget.se/produkt/cider-blanddrycker/adam-evas-appelcider-117115/,"Cider, Torr och halvtorr",Sverige,250,4.5,47,23,01
+En Svensk Cider,Päron,16.9,,,https://www.systembolaget.se/produkt/cider-blanddrycker/en-svensk-cider-181715/,"Cider, Söt",Sverige,330,4.5,56,24,03
 ,,,,,,,,,,,,
+vin,,,,,,,,,,,,
+Il Barone,"Ecologico Organic White, 2023",205.0,,,https://www.systembolaget.se/produkt/vin/il-barone-7651208/,"Vitt vin, Friskt & Fruktigt",Spanien,000,11.5,57,12,05
+Côtes-du-Rhône,"Reserve, 2023",299.0,,,https://www.systembolaget.se/produkt/vin/cotes-du-rhone-601808/,"Rött vin, Kryddigt & Mustigt",Frankrike,000,14.0,38,06,05
 ,,,,,,,,,,,,
-Dugges,Tropic Thunder Stillwater Artisanal,38.0,,,https://www.systembolaget.se/produkt/ol/dugges-3103215/,"Öl, Övrig syrlig öl",Sverige,330,4.5,40,32,06
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-Halmstad Crush,Mango Passion,17.5,,,https://www.systembolaget.se/produkt/cider-blanddrycker/halmstad-crush-172115/,"Blanddryck, Söt",Sverige,330,4.5,306,24,03
-Liquid Industries,The Bellini Project,17.9,,,https://www.systembolaget.se/produkt/cider-blanddrycker/liquid-industries-108915/,"Blanddryck, Söt",Sverige,330,4.5,18,24,04
-,,,,,,,,,,,,
-,,,,,,,,,,,,
+alkoholfritt,,,,,,,,,,,,
+Mariestads,Alkoholfri,12.9,,,https://www.systembolaget.se/produkt/alkoholfritt/mariestads-195202/,Alkoholfri Dortmunder och helles,Sverige,330,0.5,54,28,04
+Briska Demi-Sec Alkoholfri,Sauvignon Blanc och Gröna Äpplen,14.5,,,https://www.systembolaget.se/produkt/alkoholfritt/briska-demi-sec-alkoholfri-1196003/,Alkoholfri Cider,Sverige,330,0.5,61,28,06
+Halmstad Crush Thai-Basil,Alkoholfri,14.9,,,https://www.systembolaget.se/produkt/alkoholfritt/halmstad-crush-thai-basil-199415/,Alkoholfri Blanddryck,Sverige,330,0.5,40,28,06
 ,,,,,,,,,,,,
 ,,,,,,,,,,,,
