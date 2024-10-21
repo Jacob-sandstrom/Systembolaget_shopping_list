@@ -11,8 +11,8 @@ import re
 
 
 
-pubrunda = False
-dyr = False
+pubrunda = True # pris * 1.25 
+dyr = True # + 10 kr
 
 
 file = open("lista.html", "r", encoding="utf8")
@@ -103,6 +103,9 @@ for beer in beers:
 
 lager = []
 vete = []
+belgisk = []
+ipa = []
+övrigAle = []
 ale = []
 suröl = []
 porter = []
@@ -115,8 +118,14 @@ alkoholfritt = []
 for i, b in enumerate(data):
     if "alkoholfri" in b[6].lower():
         alkoholfritt.append(b)
+    # elif "ale" in b[6].lower():
+    #     ale.append(b)
+    elif "belgisk" in b[6].lower():
+        belgisk.append(b)
+    elif "ipa" in b[6].lower():
+        ipa.append(b)
     elif "ale" in b[6].lower():
-        ale.append(b)
+        övrigAle.append(b)
     elif "lager" in b[6].lower():
         lager.append(b)
     elif "porter" in b[6].lower():
@@ -135,7 +144,7 @@ for i, b in enumerate(data):
 print(övrigt)
 
 
-ordered = [[],["lager"]] + lager + [[],["vete"]] + vete + [[],["ale"]] + ale + [[],["porter"]] + porter + [[],["suröl"]] + suröl + [[],["cider"]] + cider + [[],["vin"]] + vin + [[],["alkoholfritt"]] + alkoholfritt + [[],[]] + övrigt
+ordered = [[],["Lager"]] + lager + [[],["Vete"]] + vete + [[],["Belgare"]] + belgisk + [[],["Pale ale"]] + ipa + [[],["Övrig ale"]] + övrigAle + [[],["Porter"]] + porter + [[],["Suröl"]] + suröl + [[],["cider"]] + cider + [[],["vin"]] + vin + [[],["alkoholfritt"]] + alkoholfritt + [[],[]] + övrigt
 
 # print(len(ordered))
 
@@ -150,7 +159,7 @@ def myround(x):
     if pubrunda:
         x *= 1.25
     if dyr:
-        x += 5
+        x += 10
 
     x = float(x)+2.5
     return 5 * round(x/5)
@@ -193,6 +202,12 @@ latex += s
 latex += "\n\\vspace{1cm}\n \\textbf{Cider/Blanddryck}\\\\\n"
 s = ""
 for be in cider:
+    s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
+latex += s
+
+latex += "\n\\vspace{1cm}\n \\textbf{Vin}\\\\\n"
+s = ""
+for be in vin:
     s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
 latex += s
 
