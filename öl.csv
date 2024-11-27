@@ -1,29 +1,32 @@
 namn1,namn2,pris,köp antal,tot pris,länk,stil,land,storlek,alkohol,antal i butik,sektion,hylla
 ,,,,,,,,,,,,
 Lager,,,,,,,,,,,,
-Zeunerts Original,Sverige,11.5,,,,"Öl, Ljus lager, Internationell stil",330 ml,"5,3 % vol.",10:50*,297 st,30,14
-Falcon Export,Sverige,12.5,,,,Öl Ljus lager Internationell stil,330 ml,"5,2 % vol.",11:50*,999+ st,30,02
+Zeunerts Original,Sverige,11.5,,,,"Öl, Ljus lager, Internationell stil",Sverige,330 ml,"5,3 % vol.",297 st,30,14
+Falcon Export,Sverige,12.5,,,,Öl Ljus lager Internationell stil,Sverige,330 ml,"5,2 % vol.",999+ st,30,02
 Norrlands Guld,Export,13.5,,,,"Öl, Ljus lager, Internationell stil",Sverige,330 ml,"5,3 % vol.",798 st,30,08
 Norrlands Ljus,Ekologisk,14.7,,,,"Öl, Ljus lager, Internationell stil",Sverige,330 ml,"4,7 % vol.",377 st,30,07
 Arton56,Glutenfri,15.5,,,,Öl Ljus lager Internationell stil,Sverige,330 ml,"5,2 % vol.",245 st,31,08
-Norrlands Djup,Sverige,19.9,,,,"Öl, Ljus lager, Starkare lager",500 ml,"6,8 % vol.",18:90*,241 st,29,03
-Arboga 102,Sverige,24.4,,,,Öl Ljus lager Starkare lager,500 ml,"10,2 % vol.",23:40*,258 st,29,01
+Norrlands Djup,Sverige,19.9,,,,"Öl, Ljus lager, Starkare lager",Sverige,500 ml,"6,8 % vol.",241 st,29,03
+Arboga 102,Sverige,24.4,,,,Öl Ljus lager Starkare lager,Sverige,500 ml,"10,2 % vol.",258 st,29,01
 ,,,,,,,,,,,,
 Vete,,,,,,,,,,,,
-1664 Blanc,Internationellt märke,19.3,,,,Öl Veteöl Witbier,330 ml,5 % vol.,19:30,230 st,32,08
+1664 Blanc,Internationellt märke,19.3,,,,Öl Veteöl Witbier,Internationellt märke,330 ml,5 % vol.,230 st,32,08
 ,,,,,,,,,,,,
 Belgare,,,,,,,,,,,,
-Duvel,Belgien,30.9,,,,Öl Ale Ljus stark belgisk ale/Trippel,330 ml,"8,5 % vol.",30:90,30 st,ÖS,02
+Duvel,Belgien,30.9,,,,Öl Ale Ljus stark belgisk ale/Trippel,Belgien,330 ml,"8,5 % vol.",30 st,ÖS,02
 Bourbon du Val-Dieu,2024,289.0,,,,"Öl, Ale, Ljus stark belgisk ale/Trippel",Belgien,750 ml,"13,7 % vol.",17 st,–,–
 ,,,,,,,,,,,,
 IPA/Pale ale,,,,,,,,,,,,
-Lucky Bait,Sverige,10.5,,,,Öl Ljus lager Modern stil/India Pale Lager,330 ml,"5,4 % vol.",9:50*,999+ st,31,06
+Lucky Bait,Sverige,10.5,,,,Öl Ljus lager Modern stil/India Pale Lager,Sverige,330 ml,"5,4 % vol.",999+ st,31,06
 Jämtlands,India Pale Ale,23.9,,,,"Öl, Ale, India pale ale (IPA)",Sverige,330 ml,"5,5 % vol.",37 st,26,01
 Verdant,"The Shapes, The Chaos...",40.9,,,,"Öl, Ale, New England IPA/Hazy IPA",Storbritannien,440 ml,"6,5 % vol.",88 st,–,–
 ,,,,,,,,,,,,
-Övrig ale,,,,,,,,,,,,
+Övrig öl,,,,,,,,,,,,
 Kilkenny,Draught Irish Red Ale,30.9,,,,Öl Ale Irländsk ale,Irland,440 ml,"4,3 % vol.",81 st,ÖS,03
 This is HOW,"How to Reappear, 2021",69.9,,,,"Öl, Ale, Barley wine",Sverige,330 ml,"11,5 % vol.",26 st,ÖS,03
+Zeunerts,Höga Kusten,18.5,,,,"Öl, annan öl, Blandning av olika öltyper",Sverige,500 ml,"5,3 % vol.",67 st,32,07
+Vega Bryggeri,Ringön Radler,22.9,,,,"Öl, annan öl, Smaksatt/kryddad öl",Sverige,330 ml,"3,6 % vol.",46 st,32,07
+Aecht Schlenkerla,Urbock,35.9,,,,"Öl, annan öl, Rököl",Tyskland,500 ml,"6,5 % vol.",27 st,–,–
 ,,,,,,,,,,,,
 Porter,,,,,,,,,,,,
 Carnegie,Porter,20.6,,,,Öl Torr porter och stout,Sverige,330 ml,"5,5 % vol.",76 st,32,01
@@ -53,6 +56,3 @@ vin,,,,,,,,,,,,
 alkoholfritt,,,,,,,,,,,,
 ,,,,,,,,,,,,
 ,,,,,,,,,,,,
-Zeunerts,Höga Kusten,18.5,,,,"Öl, annan öl, Blandning av olika öltyper",Sverige,500 ml,"5,3 % vol.",67 st,32,07
-Vega Bryggeri,Ringön Radler,22.9,,,,"Öl, annan öl, Smaksatt/kryddad öl",Sverige,330 ml,"3,6 % vol.",46 st,32,07
-Aecht Schlenkerla,Urbock,35.9,,,,"Öl, annan öl, Rököl",Tyskland,500 ml,"6,5 % vol.",27 st,–,–

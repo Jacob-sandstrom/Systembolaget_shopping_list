@@ -14,8 +14,8 @@ import re
 
 
 
-pubrunda = True # pris * 1.25 
-dyr = True # + 10 kr
+pubrunda = False # pris * 1.25 
+dyr = False # + 10 kr
 
 
 file = open("lista.html", "r", encoding="utf8")
@@ -29,30 +29,15 @@ file.close()
 soup = BeautifulSoup (data, "html.parser" )
 text = soup.get_text("|")
 
-# text = html2text.html2text(data)
-# print(text)
 
+# Slice and dice text
 a = text.split("Byt vy")
 b = a[1].split("pant tillkommer")
-# c = b[0].split("(/produkt")
-
-# print(c[26])
-print(b[0])
-# print(text.count("Byt vy"))
 c = re.split('(Hylla\|(?>–|[0-9]+)\|)', b[0])
-print("\n\n")
-print(c[-1])
-print(c[0:4])
-print(len(c))
-
-print(c[-3])
 d = c[0:-1]
-print(d)
-print(len(d))
 
 
 beers = []
-
 i = 0
 while i < len(d):
     print(i)
@@ -60,23 +45,21 @@ while i < len(d):
     beers.append(b)
     i += 2
 
-print(beers)
-print(beers[-1])
 
-# raise Exception("end")
+
 # beers = soup.find_all( "a", "css-145u7id")
-
-# print(len(beers))
-
 
 data = []
 for beer in beers:
     beer = re.split('\|', beer)
-    banned = ["", "Nyhet", 'Odling & Produktion', 'Eko', 'Miljöcertifierad', 'Socialt ansvar']
+    banned = ["", "Nyhet", 'Odling & Produktion', 'Eko', 'Miljöcertifierad', 'Socialt ansvar', 'Ekologiskt']
 
-    print(beer)
+    # print(beer)
     beer = list(filter(lambda x: x not in banned, beer))
+    print(len(beer))
     print(beer)
+    print("\n")
+
 
 
     # link = beer.get("href")
@@ -97,10 +80,10 @@ for beer in beers:
     # info = beer.find("div", "css-1dtnjt5").text
 
     # country = re.search("([^0-9]*)", info).group(1)
-    country = beer[3]
+    country = beer[-10]
 
     # size = re.search("([0-9]*) ml", info).group(1)
-    size = beer[4]
+    size = beer[-9]
 
     # vol = re.search("ml(.*) % vol", info).group(1)
     # v = vol.split(",")
@@ -109,13 +92,12 @@ for beer in beers:
     #     abv = int(n)+0.1*int(d)
     # else:
     #     abv = int(vol)
-    abv = beer[5]
+    abv = beer[-8]
 
     # price = beer.find("p", "css-1k0oafj").text
-    price = beer[6]
-    if not price.__contains__(":"):
-        price= beer[5]
-    print(price)
+    price = beer[-7]
+
+    # print(price)
     n, d = price.split(":")
     n = int(n)
     if "*" in d:
@@ -170,7 +152,7 @@ lager = []
 vete = []
 belgisk = []
 ipa = []
-övrigAle = []
+övrigÖl = []
 ale = []
 suröl = []
 porter = []
@@ -192,7 +174,7 @@ for i, b in enumerate(sorted_data):
     elif "ipa" in b[6].lower() or "pale" in b[6].lower():
         ipa.append(b)
     elif "ale" in b[6].lower():
-        övrigAle.append(b)
+        övrigÖl.append(b)
     elif "lager" in b[6].lower():
         lager.append(b)
     elif "porter" in b[6].lower():
@@ -211,7 +193,7 @@ for i, b in enumerate(sorted_data):
 print(övrigt)
 
 
-ordered = [[],["Lager"]] + lager + [[],["Vete"]] + vete + [[],["Belgare"]] + belgisk + [[],["IPA/Pale ale"]] + ipa + [[],["Övrig ale"]] + övrigAle + [[],["Porter"]] + porter + [[],["Suröl"]] + suröl + [[],["cider"]] + cider + [[],["vin"]] + vin + [[],["alkoholfritt"]] + alkoholfritt + [[],[]] + övrigt
+ordered = [[],["Lager"]] + lager + [[],["Vete"]] + vete + [[],["Belgare"]] + belgisk + [[],["IPA/Pale ale"]] + ipa + [[],["Övrig öl"]] + övrigÖl + övrigt + [[],["Porter"]] + porter + [[],["Suröl"]] + suröl + [[],["cider"]] + cider + [[],["vin"]] + vin + [[],["alkoholfritt"]] + alkoholfritt + [[],[]]
 
 # print(len(ordered))
 
@@ -251,9 +233,12 @@ for be in ipa:
     s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
 latex += s
 
-latex += "\n\\vspace{1cm}\n \\textbf{Övrig Ale}\\\\\n"
+latex += "\n\\vspace{1cm}\n \\textbf{Övrig Öl}\\\\\n"
 s = ""
-for be in övrigAle:
+for be in övrigÖl:
+    s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
+latex += s
+for be in övrigt:
     s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
 latex += s
 
@@ -287,11 +272,11 @@ for be in vin:
     s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
 latex += s
 
-latex += "\n\\vspace{1cm}\n \\textbf{Övrigt}\\\\\n"
-s = ""
-for be in övrigt:
-    s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
-latex += s
+# latex += "\n\\vspace{1cm}\n \\textbf{Övrigt}\\\\\n"
+# s = ""
+# for be in övrigt:
+#     s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
+# latex += s
 
 latex += "\n\\vspace{1cm}\n \\textbf{Alkoholfritt}\\\\\n"
 s = ""
