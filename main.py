@@ -4,6 +4,9 @@
 # ([0-9])\.
 # $1,
 
+import html2text
+
+
 from bs4 import BeautifulSoup
 import numpy as np
 import pandas as pd
@@ -20,40 +23,99 @@ data = file.read()
 file.close()
 
 
+
+
+
 soup = BeautifulSoup (data, "html.parser" )
-beers = soup.find_all( "a", "css-145u7id")
+text = soup.get_text("|")
+
+# text = html2text.html2text(data)
+# print(text)
+
+a = text.split("Byt vy")
+b = a[1].split("pant tillkommer")
+# c = b[0].split("(/produkt")
+
+# print(c[26])
+print(b[0])
+# print(text.count("Byt vy"))
+c = re.split('(Hylla\|(?>–|[0-9]+)\|)', b[0])
+print("\n\n")
+print(c[-1])
+print(c[0:4])
+print(len(c))
+
+print(c[-3])
+d = c[0:-1]
+print(d)
+print(len(d))
+
+
+beers = []
+
+i = 0
+while i < len(d):
+    print(i)
+    b = d[i] + d[i+1]
+    beers.append(b)
+    i += 2
+
+print(beers)
+print(beers[-1])
+
+# raise Exception("end")
+# beers = soup.find_all( "a", "css-145u7id")
 
 # print(len(beers))
 
 
 data = []
 for beer in beers:
-    link = beer.get("href")
-    link = "https://www.systembolaget.se" + link
+    beer = re.split('\|', beer)
+    banned = ["", "Nyhet", 'Odling & Produktion', 'Eko', 'Miljöcertifierad', 'Socialt ansvar']
+
+    print(beer)
+    beer = list(filter(lambda x: x not in banned, beer))
+    print(beer)
+
+
+    # link = beer.get("href")
+    # link = "https://www.systembolaget.se" + link
+    link =""
     
-    style = beer.find("p", "css-apwxtg").text
+    # style = beer.find("p", "css-apwxtg").text
+    style = beer[0]
 
-    name1 = beer.find("p", "css-1i86311").text
-    try:
-        name2 = beer.find("p", "css-i3atuq").text
-    except:
-        name2 = ""
+    # name1 = beer.find("p", "css-1i86311").text
+    name1 = beer[1]
+    # try:
+    #     name2 = beer.find("p", "css-i3atuq").text
+    # except:
+    #     name2 = ""
+    name2 = beer[2]
 
-    info = beer.find("div", "css-1dtnjt5").text
+    # info = beer.find("div", "css-1dtnjt5").text
 
-    country = re.search("([^0-9]*)", info).group(1)
+    # country = re.search("([^0-9]*)", info).group(1)
+    country = beer[3]
 
-    size = re.search("([0-9]*) ml", info).group(1)
+    # size = re.search("([0-9]*) ml", info).group(1)
+    size = beer[4]
 
-    vol = re.search("ml(.*) % vol", info).group(1)
-    v = vol.split(",")
-    if len(v) != 1:
-        n, d = v
-        abv = int(n)+0.1*int(d)
-    else:
-        abv = int(vol)
+    # vol = re.search("ml(.*) % vol", info).group(1)
+    # v = vol.split(",")
+    # if len(v) != 1:
+    #     n, d = v
+    #     abv = int(n)+0.1*int(d)
+    # else:
+    #     abv = int(vol)
+    abv = beer[5]
 
-    price = beer.find("p", "css-1k0oafj").text
+    # price = beer.find("p", "css-1k0oafj").text
+    price = beer[6]
+    if not price.__contains__(":"):
+        price= beer[5]
+    print(price)
     n, d = price.split(":")
     n = int(n)
     if "*" in d:
@@ -64,20 +126,23 @@ for beer in beers:
     else:
         price = n+0.01*int(d)
 
-    try:
-        store_info = beer.find("div", "css-1x8g9wn").text
-        #store_info = beer.find("div", "css-1x8g9wn")
-        print(store_info)
-        num_in_store = re.search("Antal i butik(.*) st", store_info).group(1)
-        section = re.search("stSektion(.*)Hylla(.*)", store_info).group(1)
-        shelf = re.search("stSektion(.*)Hylla(.*)", store_info).group(2)
-    except:
-        print("fail\n\n\n")
-        num_in_store = ""
-        section = ""
-        shelf = ""
+    # try:
+    #     store_info = beer.find("div", "css-1x8g9wn").text
+    #     #store_info = beer.find("div", "css-1x8g9wn")
+    #     print(store_info)
+    #     num_in_store = re.search("Antal i butik(.*) st", store_info).group(1)
+    #     section = re.search("stSektion(.*)Hylla(.*)", store_info).group(1)
+    #     shelf = re.search("stSektion(.*)Hylla(.*)", store_info).group(2)
+    # except:
+    #     print("fail\n\n\n")
+    #     num_in_store = ""
+    #     section = ""
+    #     shelf = ""
 
-    
+    num_in_store = beer[-5]
+    section = beer[-3]
+    shelf = beer[-1]
+
     # print(link)
     # print(style)
     # print(name1)
