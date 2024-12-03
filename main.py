@@ -52,7 +52,7 @@ while i < len(d):
 data = []
 for beer in beers:
     beer = re.split('\|', beer)
-    banned = ["", "Nyhet", 'Odling & Produktion', 'Eko', 'Miljöcertifierad', 'Socialt ansvar', 'Ekologiskt']
+    banned = ["", "Nyhet", 'Odling & Produktion', 'Eko', 'Miljöcertifierad', 'Socialt ansvar', 'Ekologiskt', 'Ordervara, längre leveranstid']
 
     # print(beer)
     beer = list(filter(lambda x: x not in banned, beer))
@@ -75,7 +75,10 @@ for beer in beers:
     #     name2 = beer.find("p", "css-i3atuq").text
     # except:
     #     name2 = ""
-    name2 = beer[2]
+    if len(beer) == 14:
+        name2 = beer[2]
+    else:
+        name2 = ""
 
     # info = beer.find("div", "css-1dtnjt5").text
 
